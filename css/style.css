@@ -282,3 +282,28 @@ main{flex:1;display:flex;flex-direction:column}
 .site-footer::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--weave)}
 .footer-logo{display:block;height:54px;width:auto;margin:0 0 1rem}
 @media (max-width:520px){.brand img{height:44px}}
+
+/* Live demo: spotlight band and service card (Services page) */
+.demo-band{position:relative;background:var(--navy);color:#fff;padding:4.5rem 0;overflow:hidden}
+.demo-band::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--weave)}
+.demo-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:3rem;align-items:center}
+.demo-band h2{color:#fff;font-size:clamp(1.7rem,3vw,2.2rem)}
+.eyebrow.light{color:var(--green)}
+.demo-lede{color:#dfe5ee;font-size:1.12rem;margin:0 0 1.2rem}
+.demo-list{list-style:none;padding:0;margin:0 0 1.6rem;display:grid;gap:.5rem}
+.demo-list li{display:flex;gap:.6rem;align-items:center;color:#e9eef3}
+.demo-list .icon{color:var(--green);flex:none}
+.demo-btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.demo-note{margin:.9rem 0 0;font-size:.9rem;color:#9aa3b5}
+.bframe{display:block;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08);transition:transform .2s}
+.bframe:hover{transform:translateY(-4px)}
+.bbar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#e9ecf1}
+.bbar i{width:10px;height:10px;border-radius:50%;background:#c4c9d3}
+.bbar span{margin-left:10px;flex:1;background:#fff;border-radius:6px;padding:3px 10px;font-size:.78rem;color:#5a6070}
+.bframe img{display:block;width:100%;height:auto}
+.service-card.has-demo{position:relative;border-color:var(--green);background:#fff;box-shadow:0 0 0 1px var(--green)}
+.demo-pill{position:absolute;top:1.1rem;right:1.1rem;display:inline-flex;align-items:center;gap:.35rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);background:var(--green-tint);padding:.25rem .6rem;border-radius:999px}
+.demo-pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(111,194,125,.3)}
+.card-btns{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
+.btn-sm{padding:.5rem .95rem;font-size:.92rem}
+@media (max-width:900px){.demo-grid{grid-template-columns:1fr;gap:2rem}.demo-band{padding:3.25rem 0}}

@@ -4,6 +4,7 @@ tagline: Helping Indigenous communities plan, map, and manage their lands, asset
 url: https://tapestry.jamesspooner.org
 phone: "+1 (672) 123 456"
 phone_link: "+1672123456"
+demo_url: https://demo.tapestryresearchgroup.ca   # live demo of the Maintenance Management portal (Services page)
 email: info@example.com   # change here once the real address is known; every page picks it up
 
 # Tabs along the top, in order

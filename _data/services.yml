@@ -9,7 +9,8 @@
   text: Maps designed to your brief, for the band office wall, reports, presentations, and funding applications.
 - title: Field to dashboard
   icon: field-dashboard
-  program: information-management
+  program: geospatial-mapping
+  demo: true   # shows a "Live demo" tag and a "Try the demo" button linking to demo_url in _config.yml
   text: Mobile data collection apps feeding live, web-based dashboards, so field work is visible as soon as it is done.
 - title: Research
   icon: research

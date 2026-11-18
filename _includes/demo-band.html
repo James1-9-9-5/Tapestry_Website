@@ -1,0 +1,23 @@
+<section class="demo-band" id="demo">
+  <div class="wrap demo-grid">
+    <div>
+      <p class="eyebrow light">Live demo</p>
+      <h2>See a field-to-dashboard system in action</h2>
+      <p class="demo-lede">Explore a working Maintenance Management portal, the kind we build with communities. Report a problem, then see how staff pick it up in the dashboards and surveys.</p>
+      <ul class="demo-list">
+        <li>{% include icons/check.svg %}Public report form, no sign-in</li>
+        <li>{% include icons/check.svg %}Staff dashboards, surveys, and records</li>
+        <li>{% include icons/check.svg %}Branded to each Nation, installs on a phone</li>
+      </ul>
+      <div class="demo-btns">
+        <a class="btn" href="{{ site.demo_url }}" target="_blank" rel="noopener">Open the demo {% include icons/external.svg %}</a>
+        <a class="btn btn-ghost" href="contact.html">Book a walkthrough</a>
+      </div>
+      <p class="demo-note">Sample data only. Opens in a new tab.</p>
+    </div>
+    <a class="bframe" href="{{ site.demo_url }}" target="_blank" rel="noopener" aria-label="Open the Maintenance Management demo">
+      <span class="bbar" aria-hidden="true"><i></i><i></i><i></i><span>{{ site.demo_url | remove: "https://" }}</span></span>
+      <img src="images/demo-portal.jpg" alt="Home page of the Maintenance Management demo portal" width="1280" height="800" loading="lazy">
+    </a>
+  </div>
+</section>

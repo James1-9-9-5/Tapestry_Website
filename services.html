@@ -32,6 +32,8 @@ intro: Our work spans four interwoven program areas. Within them, we offer speci
   </div>
 </section>
 
+{% include demo-band.html %}
+
 <section class="section alt" id="services">
   <div class="wrap">
     <div class="section-head">
@@ -42,11 +44,19 @@ intro: Our work spans four interwoven program areas. Within them, we offer speci
     <div class="service-grid">
       {%- for s in site.data.services %}
       {%- assign prog = site.data.programs | where: "id", s.program | first %}
-      <div class="service-card">
+      <div class="service-card{% if s.demo %} has-demo{% endif %}">
+        {%- if s.demo %}<span class="demo-pill">Live demo</span>{% endif %}
         <span class="icon-badge">{% include icons/{{ s.icon }}.svg %}</span>
         <h3>{{ s.title }}</h3>
         <p>{{ s.text }}</p>
+        {%- if s.demo %}
+        <div class="card-btns">
+          <a class="btn btn-sm" href="{{ site.demo_url }}" target="_blank" rel="noopener">Try the demo {% include icons/external.svg %}</a>
+          <a class="service-program" href="#{{ prog.id }}">{{ prog.title }}</a>
+        </div>
+        {%- else %}
         <a class="service-program" href="#{{ prog.id }}">{{ prog.title }}</a>
+        {%- endif %}
       </div>
       {%- endfor %}
     </div>
