@@ -1,0 +1,215 @@
+/*
+  SITE SETTINGS — edit this one file to brand the site for a community.
+  Every page reads names, phone numbers and links from here.
+  Links left as "#" show a "Link coming soon" note instead of opening.
+*/
+window.SITE = {
+  // Names
+  nation: "Tapestry Research Group",                       // e.g. "Example First Nation"
+  community: "Tapestry",                 // e.g. the village or reserve name
+  siteName: "Maintenance Management",            // product name, shown large in the header
+  byline: "by Tapestry Research Group",          // small line under the product name in the header
+
+  // BRAND COLOURS: pick two colours from the Nation's logo and the whole site follows.
+  // primary = dark colour for buttons, header text and footer (keep it dark)
+  // accent  = highlight colour for links, icons and badges
+  // Lighter and darker shades are worked out automatically, and text is kept readable.
+  brand: {
+    primary: "#2b2e3c",
+    accent: "#1d6b2e",   // dark logo green: buttons, links, icons, and the "Report a problem" tile
+    wash: "#6fc27d",     // light logo green: the colour faded over the banner photos
+    light: "#6fc27d",    // light logo green: labels on dark backgrounds and the current-page marker
+    // Extras taken from the logo:
+    // warm  = second highlight for small labels (kept readable on white automatically)
+    // weave = colours for the thin striped bar under the hero, footer and poster header ("" turns it off)
+    warm: "#2b6ec0",
+    weave: ["#1d6b2e", "#388c49", "#6fc27d", "#7bbcef", "#2b6ec0", "#1f5593"]
+  },
+
+  // Logo: put the Nation's logo in /images and set its path here, e.g. "images/logo.png".
+  // Leave as "" to show the "Nation's logo" placeholder.
+  logo: "images/logo.png",
+  logoReverse: "images/logo-reverse.png",   // mark only, for dark backgrounds
+  // Full logo (mark + name), as used in the Survey123 header. Shown in the site header, footer and poster.
+  logoLockup: "images/logo-lockup.svg",
+  logoLockupReverse: "images/logo-lockup-reverse.svg",
+
+  // DEMO MODE: shows a small "Demo site" tag in the footer. Set to false for a real community.
+  demo: true,
+  demoNote: "Demonstration copy of the maintenance portal by Tapestry Research Group.",
+  // Strip across the top of every page in demo mode, linking visitors back to the Tapestry website.
+  demoBar: {
+    text: "You're viewing a sample portal built by Tapestry Research Group. All data is fictional.",
+    backLabel: "Back to Tapestry",
+    backUrl: "https://pending.tapestryresearchgroup.ca/services.html",
+    walkthroughLabel: "Book a walkthrough",
+    walkthroughUrl: "https://pending.tapestryresearchgroup.ca/contact.html"
+  },
+  // In demo mode this replaces the sign-in note on the Staff page.
+  demoSigninNote: "This is a demo with sample data. Some tools may ask you to sign in. If you can't get in, book a walkthrough and we'll show you around.",
+
+  // Optional greeting in the Nation's language, shown above the home headline.
+  // Leave as "" to hide it.
+  greeting: "",
+
+  // Notice banner across the top of every page (water shutoffs, closures, etc.).
+  // level: "info" (green), "warning" (amber) or "alert" (red). Set show: false to hide.
+  notice: {
+    show: true,
+    level: "info",        // info (blue-grey), warning (amber) or alert (red)
+    text: "Water shut-off on Harbour Road, Tuesday 9 am to 1 pm, for valve replacement. Please store water beforehand.",
+    link: "",              // optional URL for "More details"
+    id: "notice-1"         // change this when you post a new notice so people who closed the old one see it
+  },
+
+  // Footer details
+  about: "This portal is run by the Maintenance Department. It connects community members and staff to the reporting form, dashboards and records used to look after community buildings, homes and equipment.",
+  lastUpdated: "November 2026",
+
+  // Contacts
+  officeLabel: "Maintenance Office",
+  officePhone: "+1 (788) 231-6651",
+  emergencyPhone: "+1 (788) 231-6651",
+  officeEmail: "admin@tapestryresearchgroup.com",
+  officeHours: "Monday to Friday, 8:30 am – 4:30 pm",
+
+  // Help for staff who can't get into the tools (shown at the bottom of the Staff page)
+  staffHelp: {
+    name: "the Maintenance Coordinator",
+    email: "admin@tapestryresearchgroup.com",
+    manualUrl: "#"          // link to the system manual or Module 4
+  },
+
+  // Public report form (e.g. a public Survey123 link). No sign-in needed.
+  reportUrl: "https://arcg.is/1HOL443",
+  // Website named on the poster for people who want to fill in the form later
+  posterWebsite: "tapestryresearchgroup.ca",
+
+  // Staff tools. Each mode shows as a tab on its card. Add, remove or rename freely.
+  // disabled: true greys out a tab so it can't be selected. Put it on a whole service
+  // to grey out every tab on that card (and its Open button), or on a single mode.
+  services: [
+    {
+      id: "general",
+      icon: "wrench",           // wrench, house, lifebuoy, box, book, truck, water, bolt or tree
+      title: "General Maintenance",
+      blurb: "Work orders, assignments and progress for buildings, grounds and community assets.",
+      modes: [
+        { label: "Dashboard", text: "Live map and charts of open and closed work orders.", url: "https://www.arcgis.com/apps/dashboards/f437016e537040fda841f3f61f1c6580" },
+        { label: "Survey", text: "Log a new deficiency or update a work order in the field.", url: "https://arcg.is/0jOPW84" },
+        { label: "Report", text: "Printable summary of work completed this period.", url: "https://survey123.arcgis.com/surveys/6448d20153f14c0682669d0fd2a87d72/data?extent=-123.1752,49.2568,-123.0350,49.2766" },
+        { label: "Dataset", text: "The underlying records, for filtering and export.", url: "https://ejsa.maps.arcgis.com/home/item.html?id=6be2e322a7794765810ca196263b76f6&dataTabView=table#data" }
+      ]
+    },
+    {
+      id: "housing",
+      disabled: true,          // greyed out until the links are ready
+      icon: "house",           // wrench, house, lifebuoy, box, book, truck, water, bolt or tree
+      title: "Housing Maintenance",
+      blurb: "House condition, inspection status and housing work orders in one view.",
+      modes: [
+        { label: "Dashboard", text: "Condition, inspection and work order status by unit.", url: "#" },
+        { label: "Survey", text: "Record a housing inspection or repair.", url: "#" },
+        { label: "Report", text: "Housing summary for planning and funding reports.", url: "#" },
+        { label: "Dataset", text: "Unit records and inspection history.", url: "#" },
+        { label: "Files", text: "House records and documents in shared storage.", url: "#" }
+      ]
+    },
+    {
+      id: "inventory",
+      disabled: true,          // greyed out until the links are ready
+      icon: "box",           // wrench, house, lifebuoy, box, book, truck, water, bolt or tree
+      title: "Inventory Tracker",
+      blurb: "Parts, materials and tools: what is on hand and what has moved.",
+      modes: [
+        { label: "Stock Levels", text: "What is on the shelf and what is running low.", url: "#" },
+        { label: "Transactions", text: "Items signed in and out, by date and person.", url: "#" },
+        { label: "Survey", text: "Record stock received or used.", url: "#" },
+        { label: "Dataset", text: "The full inventory table.", url: "#" }
+      ]
+    },
+    {
+      id: "modules",
+      disabled: true,          // greyed out until the links are ready
+      icon: "book",           // wrench, house, lifebuoy, box, book, truck, water, bolt or tree
+      title: "Modules",
+      blurb: "Reference modules for the maintenance system: how it works, how to use it, and how work is planned and reviewed.",
+      // label = short tab name, title = button text, icon = optional (book by default for modules)
+      modes: [
+        { label: "Introduction", title: "Module 1: Introduction", icon: "book", text: "Purpose of the plan and how to use these modules.", url: "#" },
+        { label: "Asset Inventory", title: "Module 2: Asset Inventory", icon: "book", text: "What the community owns and where it is.", url: "#" },
+        { label: "Condition & Risk", title: "Module 3: Condition & Risk", icon: "book", text: "How assets are rated and which risks come first.", url: "#" },
+        { label: "The System", title: "Module 4: Asset Management System", icon: "book", text: "How the dashboards, surveys and records fit together.", url: "#" },
+        { label: "Planning", title: "Module 5: Maintenance Planning", icon: "book", text: "Scheduling, review and monitoring of maintenance work.", url: "#" }
+      ]
+    }
+  ],
+
+  // Seasonal maintenance tips. During each season, its tips are added to the safety tip
+  // ticker automatically (still labelled "Safety tip"). Other seasons' tips don't show.
+  seasons: [
+    { name: "Spring", months: [3, 4, 5], tips: [
+      "Check roofs and gutters for winter damage",
+      "Look for leaks under sinks and around windows",
+      "Clear drainage ditches and culverts"
+    ]},
+    { name: "Summer", months: [6, 7, 8], tips: [
+      "Clear brush and dry material away from buildings",
+      "Check decks, stairs and railings",
+      "Book exterior painting and repairs"
+    ]},
+    { name: "Fall", months: [9, 10, 11], tips: [
+      "Change furnace filters and test heating",
+      "Clean gutters and downspouts before the rain",
+      "Check weatherstripping on doors and windows"
+    ]},
+    { name: "Winter", months: [12, 1, 2], tips: [
+      "Keep vents and chimneys clear of snow",
+      "Let taps drip in deep cold to stop frozen pipes",
+      "Keep walkways sanded and salted"
+    ]}
+  ],
+
+  // Frequently asked questions (Community page)
+  faq: [
+    { q: "What should I report?",
+      a: "Anything broken, leaking, unsafe or not working in community buildings, homes, roads, walkways or equipment. If you're not sure, report it and staff will decide." },
+    { q: "Is it an emergency?",
+      a: "If anyone is in danger, call 911 first. For urgent problems like no heat in winter, a burst pipe or a power hazard, call the after-hours line rather than using the form." },
+    { q: "Who fixes what in my home?",
+      a: "This depends on your housing agreement. In general, the Maintenance Department looks after the structure, heating, plumbing and electrical systems in community-owned housing. Contact the office if you're unsure." },
+    { q: "How long will a repair take?",
+      a: "Safety problems come first. Other work is scheduled by priority, staff availability and whether parts or materials need to be ordered." },
+    { q: "Can I check on a report I've made?",
+      a: "Yes. Call or email the Maintenance Office and they can tell you where things stand." },
+    { q: "Who sees my report?",
+      a: "Only the maintenance team. Reports are not shown publicly, and your contact details are only used to follow up with you." },
+    { q: "Can I report for someone else?",
+      a: "Yes. You can report a problem on behalf of an Elder, a neighbour or a family member. Add their location and the best way to reach them." }
+  ],
+
+  // PHOTOS: where each photo is centred when it's cropped to fit (focus: "left% top%"),
+  // and the short field-log caption shown on it. "50% 50%" is the centre; "30% 40%" moves
+  // the crop left and up. Change these whenever you swap a photo.
+  photos: {
+    "hero-1": { focus: "35% 45%", caption: "Waterfront homes" },
+    "hero-2": { focus: "65% 35%", caption: "Framing a new build" },
+    "hero-3": { focus: "50% 55%", caption: "Roofing materials" },
+    "hero-4": { focus: "55% 62%", caption: "Village from above" },
+    "hero-5": { focus: "45% 32%", caption: "Field inspection" },
+    "community": { focus: "50% 58%" },
+    "staff": { focus: "42% 40%" },
+    "community-header": { focus: "40% 45%", caption: "Residential street" },
+    "staff-header": { focus: "60% 55%", caption: "Materials store" }
+  },
+
+  // Rotating safety tips (home hero and Community page)
+  safetyTips: [
+    "Report broken steps, railings or lights as soon as you see them.",
+    "Keep exits, stairways and hallways clear.",
+    "Test your smoke alarm monthly and change batteries twice a year.",
+    "Never touch downed power lines. Stay back and call for help.",
+    "Clear ice and snow from walkways and use salt or sand.",
+    "Report water leaks early to prevent mould and rot."
+  ]
+};

@@ -1,77 +1,109 @@
----
-layout: default
-nav: home
-title: Planning, mapping, and information management for Indigenous communities
-description: Tapestry Research Group helps Indigenous communities in British Columbia and across Canada plan, map, and manage their lands, assets, and information.
----
-<section class="hero">
-  <div class="hero-text">
-    <p class="eyebrow eyebrow-light">Tapestry Research Group</p>
-    <h1>Helping Indigenous communities plan, map, and manage their lands, assets, and information</h1>
-    <p>A values-driven, interdisciplinary team with over 25 years of experience supporting Indigenous communities in British Columbia and across Canada.</p>
-    <div class="hero-actions">
-      <a class="btn" href="services.html">Explore our services</a>
-      <a class="btn btn-ghost" href="about.html">Who we are</a>
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tapestry Maintenance Management</title>
+  <meta name="description" content="Report a problem, or open the maintenance dashboards, surveys and records.">
+  <meta name="theme-color" content="#2b2e3c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tapestry Maintenance Management">
+  <meta property="og:description" content="Report a problem, or open the maintenance dashboards, surveys and records.">
+  <meta property="og:image" content="https://demo.tapestryresearchgroup.ca/images/og.png">
+  <meta property="og:url" content="https://demo.tapestryresearchgroup.ca/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css?v=4">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Maintenance">
+  <link rel="stylesheet" href="css/style.css?v=22">
+  <script src="js/config.js?v=23"></script>
+  <script src="js/brand.js?v=4"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="notice" class="notice" role="status" hidden>
+  <div class="wrap"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg><span class="notice-text"></span><button class="notice-toggle" type="button" aria-expanded="false">More</button><a class="notice-more" href="#">More details</a><button class="notice-close" type="button" aria-label="Close notice"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Maintenance Management home"><img class="brand-mark" src="images/logo-reverse.png" alt="" width="44" height="44"><span class="brand-name"><strong data-site="siteName">Maintenance Management</strong><small data-site="byline">by Tapestry Research Group</small></span></a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a><a href="staff.html">Staff</a><a href="community.html">Community</a>
+      <a class="nav-report" href="community.html">Report a problem</a>
+    </nav>
+    <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+  </div>
+</header>
+<main id="main">
+<section class="home-top">
+  <div class="wrap">
+    <div class="hero-banner">
+      <div class="hero-bg" aria-hidden="true"><img class="slide" data-photo="hero-1" src="images/hero-1.jpg" alt="" width="1200" height="800" fetchpriority="high"><img class="slide" data-photo="hero-2" data-src="images/hero-2.jpg" alt="" width="1200" height="800"><img class="slide" data-photo="hero-3" data-src="images/hero-3.jpg" alt="" width="1200" height="800"><img class="slide" data-photo="hero-4" data-src="images/hero-4.jpg" alt="" width="1200" height="800"><img class="slide" data-photo="hero-5" data-src="images/hero-5.jpg" alt="" width="1200" height="800"></div>
+      <div class="hero-copy">
+        <p class="greeting" data-site="greeting" data-optional="greeting"></p>
+        <p class="kicker"><span data-site="community">Tapestry</span> &middot; Maintenance portal</p>
+        <h1>Looking after the community&rsquo;s assets</h1>
+        <p class="lead">Report a problem, or open the tools the Maintenance Office uses to plan, track, and complete maintenance work across the community.</p>
+      </div>
+      <span class="photo-cap" aria-hidden="true"></span>
+    </div>
+    <div class="hero-tiles">
+      <a class="hero-tile primary" href="community.html"><span class="tile-ic"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 4.5a2 2 0 0 1 3.4 0l8 14A2 2 0 0 1 20 21.5H4a2 2 0 0 1-1.7-3z"/><path d="M12 10v4.5M12 17.5v.01"/></svg></span><h2>Report a problem</h2><p>Open to everyone, no sign-in needed.</p><span class="tile-go">Start a report <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="hero-tile" href="staff.html"><span class="tile-ic"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h2>Staff tools</h2><p>Dashboards, surveys, and records.</p><span class="tile-go">Sign in <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="hero-tile" href="community.html#how"><span class="tile-ic"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.3A4.5 4.5 0 0 1 21 18.5"/></svg></span><h2>For the community</h2><p>What happens after you report.</p><span class="tile-go">Learn more <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <div class="tip-strip ticker"><span class="ticker-label"><svg class="icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg><span class="lbl">Safety tip</span></span><span class="ticker-text"></span><button class="ticker-pause" type="button"></button></div>
+  </div>
+</section>
+<section class="section contact-section">
+  <div class="wrap">
+    <div class="contact-panel" data-reveal>
+      <div>
+        <p class="kicker">Need help?</p>
+        <h2>Something wrong?</h2>
+        <p>Report it online any time, or call the office during working hours. If anyone is in danger, call 911 first.</p>
+        <a class="more" href="community.html">How reporting works <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="contact-list">
+        <a class="call" href="#" data-tel="officePhone"><span class="badge"><svg class="icon duo" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="duo-fill" fill="currentColor" stroke="none"><path d="M5 3.5h3.5l2 5-2.5 1.5a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></g><path d="M5 3.5h3.5l2 5-2.5 1.5a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg></span><span><small data-site="officeLabel">Maintenance Office</small><b class="tel-num">000-000-0000</b></span></a>
+        <a class="call urgent" href="#" data-tel="emergencyPhone"><span class="badge"><svg class="icon duo" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="duo-fill" fill="currentColor" stroke="none"><path d="M12 3.5L21.5 20h-19z"/></g><path d="M10.3 4.5a2 2 0 0 1 3.4 0l8 14A2 2 0 0 1 20 21.5H4a2 2 0 0 1-1.7-3z"/><path d="M12 10v4.5M12 17.5v.01"/></svg></span><span><small>After-hours emergency line</small><b class="tel-num">000-000-0000</b></span></a>
+      </div>
     </div>
   </div>
-  <!-- Footage: bc-1.mp4 to bc-6.mp4 in the videos folder -->
-  <div class="hero-media" aria-hidden="true">
-    <div class="clip"><video muted playsinline preload="auto" poster="images/photos/inlet.jpg"><source src="videos/bc-1.mp4" type="video/mp4"></video></div>
-    <div class="clip"><video muted playsinline preload="metadata"><source src="videos/bc-2.mp4" type="video/mp4"></video></div>
-    <div class="clip"><video muted playsinline preload="metadata"><source src="videos/bc-3.mp4" type="video/mp4"></video></div>
-    <div class="clip"><video muted playsinline preload="metadata"><source src="videos/bc-4.mp4" type="video/mp4"></video></div>
-    <div class="clip"><video muted playsinline preload="metadata"><source src="videos/bc-5.mp4" type="video/mp4"></video></div>
-    <div class="clip"><video muted playsinline preload="metadata"><source src="videos/bc-6.mp4" type="video/mp4"></video></div>
-  </div>
 </section>
-
-<section class="facts" aria-label="At a glance">
-  <div class="wrap">
-    <div class="fact"><span class="fact-icon">{% include icons/people.svg %}</span><div><strong>25+ years</strong><span>supporting Indigenous communities in BC and across Canada</span></div></div>
-    <div class="fact"><span class="fact-icon">{% include icons/weave.svg %}</span><div><strong>Four program areas</strong><span>woven together across strategy, information, mapping, and design</span></div></div>
-    <a class="fact fact-link" href="about.html#data-sovereignty"><span class="fact-icon">{% include icons/shield.svg %}</span><div><strong>Data sovereignty</strong><span>your community&rsquo;s protocols govern your information</span></div></a>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">What we do</p>
-      <h2 class="section-title">Four interwoven program areas</h2>
-      <p>Every project draws on more than one of these, so the plans, maps, and systems we build work together.</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-about">
+      <div class="footer-brand"><img class="footer-lockup" data-lockup="dark" src="images/logo-lockup-reverse.svg" alt="Tapestry Research Group" width="180" height="54"><span class="footer-site" data-site="siteName">Maintenance Management</span></div>
+      <p data-site="about">About this portal.</p>
     </div>
-    <div class="program-cards">
-      {%- for p in site.data.programs %}
-      <a class="program-card" href="services.html#{{ p.id }}">
-        <span class="program-badge">{% include icons/program-{{ p.id }}.svg %}</span>
-        <h3>{{ p.title }}</h3>
-        <p>{{ p.short }}</p>
-        <span class="more">Learn more {% include icons/arrow.svg %}</span>
-      </a>
-      {%- endfor %}
+    <nav class="footer-nav" aria-label="Footer">
+      <h2>Explore</h2>
+      <a href="index.html">Home</a>
+      <a href="staff.html">Staff tools</a>
+      <a href="community.html">Community</a>
+      <a href="community.html">Report a problem</a>
+      <a href="poster.html">Printable poster</a>
+    </nav>
+    <div class="footer-contact">
+      <h2 data-site="officeLabel">Maintenance Office</h2>
+      <a href="#" data-tel="officePhone"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span class="tel-num">000-000-0000</span></a>
+      <a href="#" data-mail="officeEmail"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="mail-text">maintenance@example.org</span></a>
+      <span class="row"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-site="officeHours">Office hours</span></span>
     </div>
   </div>
-</section>
-
-<section class="photo-band" style="background-image:url('images/photos/cedar.jpg')">
-  <div class="wrap">
-    <p class="photo-quote">Our work is grounded in humility and respect. We weave together complementary ways of knowing, so the tools and plans we build reflect each community&rsquo;s own priorities.</p>
-    <a class="more more-light" href="about.html">More about us {% include icons/arrow.svg %}</a>
+  <div class="wrap footer-base">
+    <span>&copy; <span data-year>2026</span> <span data-site="nation">Tapestry Research Group</span>. All rights reserved.</span>
+    <span>Last updated <span data-site="lastUpdated">2026</span></span>
   </div>
-</section>
-
-<section class="section alt">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">How we can help</p>
-      <h2 class="section-title">Services</h2>
-    </div>
-    <ul class="service-chips">
-      {%- for s in site.data.services %}
-      <li><a href="services.html#services">{% include icons/{{ s.icon }}.svg %}<span>{{ s.title }}</span></a></li>
-      {%- endfor %}
-    </ul>
-  </div>
-</section>
-
-{% include cta.html %}
+</footer>
+<script src="js/main.js?v=14"></script>
+</body>
+</html>
